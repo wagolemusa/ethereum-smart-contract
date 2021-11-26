@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Cryptomasterclass</title>
+        <link href="css/app.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body>
+        <h1>ChatWei (litle)</h1>
+        <h2>The Ethereum Messenger</h2>
+        <hr style="border: 1px solid black; margin-top: -5px" />
+        <br/>
+
+        <label>Contract Address</label><br/>
+        <a  target="_blank" type="addressLinks" id="contractAddress" spellcheck="false">Could not load</a>
+        <br/><br/>
+
+        <label>Contract Owner</label><br/>
+        <a  target="_blank" type="addressLinks" id="contractOwner" spellcheck="false">Could not load</a>
+        <br/><br/>
+
+
+        <label>Your Ethereum address</label><br/>
+        <a  target="_blank" type="addressLinks" id="myAddress" spellcheck="false">Could not load</a>
+        <br/><br/>
+        <label>Your balance</label>
+
+        <textarea type="mySimpleLabel" id="MyBalance" spellcheck="false">0 Ether</textarea>
+
+        <br/><br/>
+
+        <lable>User directory</lable><br/><br/>
+        <input type="myDefaultButton" value="Copy" onclick="App.copyAddressToSend()" style="float: right;"></input>
+        <div style="overflow: hidden" padding-right: 10px;></div>
+        <select type="registerUsersAddressMenu" id="reqisteredUsersAddressMenu"></select>      
+        
+        <br/><br/><br/>
+        <label>Status:</label><br/>
+        <span id="status" style="overflow: hidden; word-wrap: break-word; display: inline-block; white-space: pre-wrap; font-size:12px; color:red;">Welcome to ChatWei</span>
+        
+    </body>
+
+</html>
+
