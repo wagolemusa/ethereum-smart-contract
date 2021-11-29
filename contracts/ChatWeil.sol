@@ -46,8 +46,6 @@ contract ChatWeil {
         }
     }
 
-
-   
     function getContractProperties() public view returns(address, address[]){
         return (contractProperties.ChatWeilOwner, contractProperties.registeredUserAddress);
     }
